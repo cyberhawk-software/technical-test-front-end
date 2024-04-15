@@ -46,7 +46,7 @@ As mentioned above we have chosen to make use of Laravel Sail as the foundation 
     - This will require either PHP 8 installed on your local machine or the use of [a small docker container](https://laravel.com/docs/8.x/sail#installing-composer-dependencies-for-existing-projects) that runs PHP 8 that can install the dependencies for us.
 - If you haven't done so already copy the `.env.example` file to `.env`
     - If you are running a local development environment you may need to change some default ports in the `.env` file
-        - We've already changed mysql to 33060 and NGINX to 81 for you
+        - We've already changed mysql to 3303 and NGINX to 8382 for you
 - It should now be time to [start Sail](https://laravel.com/docs/8.x/sail#starting-and-stopping-sail) and the task
 - There is a file in the root of this project called `api-spec.yaml` this can be imported into your application of choice to ensure you're building your application to the spec that we're expecting. Some notable applications are:
   - Postman
@@ -75,4 +75,4 @@ composer install --ignore-platform-reqs
   - Sail creates a docker volume which is persistent, so stopping/starting sail will not affect/fix issues in a volume (missing DB etc)
 
 ## Your Notes
-This is a place for you to add your notes, plans, thinking and any feedback you have for us of the task, please feel free to include whatever you like here, we'll make sure to read it. 
+This is a place for you to add your notes, plans, thinking and any feedback you have for us of the task, please feel free to include whatever you like here, we'll make sure to read it.
